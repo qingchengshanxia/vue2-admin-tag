@@ -2,11 +2,11 @@
 * @Author: lhl
 * @Date:   2018-05-05 11:15:23
 * @Last Modified by:   lhl
-* @Last Modified time: 2018-05-05 11:15:42
+* @Last Modified time: 2018-06-11 15:02:06
 */
 @charset "UTF-8";
 /*css 初始化 */
-html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img { margin:0; padding:0; }
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img,div,i,a,img { margin:0; padding:0; box-sizing: border-box}
 fieldset, img,input,button { border:none; padding:0;margin:0;outline-style:none; }   /*去掉input等聚焦时的蓝色边框*/
 ul, ol { list-style:none; }
 input { padding-top:0; padding-bottom:0; font-family: "SimSun","宋体";}
@@ -59,3 +59,36 @@ s,i,em{font-style:normal;text-decoration:none;}
 .font12{ font-size: 12px;}
 .font14{ font-size: 14px;}
 .font16{ font-size: 16px;}
+
+
+/*定义滚动条宽高及背景，宽高分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar,
+::-webkit-scrollbar,
+::-webkit-scrollbar,
+::-webkit-scrollbar{
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+}
+/*定义滚动条的轨道，内阴影及圆角*/
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-track{
+    // -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    width:8px;
+    height:8px;
+    border-radius: 8px;
+    background-color: #fff;
+}
+/*定义滑块，内阴影及圆角*/
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-thumb{
+    width: 8px;
+    height:8px;
+    border-radius: 8px;
+    // -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #C8C9CC;
+}
